@@ -4,7 +4,7 @@ module.exports = {
     dependency: {
         platforms: {
             ios: {
-                podspecPath: path.join(__dirname, 'react-native-voximplant.podspec')
+                podspecPath: path.join(__dirname, 'react-native-webrtc.podspec')
             },
             android: {
                 packageImportPath: 'import com.voximplant.reactnative.VoxImplantReactPackage;',
