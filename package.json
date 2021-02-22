@@ -1,6 +1,6 @@
 {
   "name": "react-native-webrtc",
-  "version": "1.84.0",
+  "version": "1.84.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/react-native-webrtc/react-native-webrtc.git"
@@ -25,7 +25,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "doc-as-json": "jsdoc -X ./index.js"
+    "doc-as-json": "jsdoc -X ./vp.js"
   },
   "devDependencies": {
     "jsdoc": "^3.5.5",
