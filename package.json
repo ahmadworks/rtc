@@ -1,0 +1,37 @@
+{
+  "name": "react-native-webrtc",
+  "version": "1.84.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-webrtc/react-native-webrtc.git"
+  },
+  "nativePackage": true,
+  "description": "WebRTC for React Native",
+  "homepage": "https://github.com/react-native-webrtc/react-native-webrtc",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "webrtc"
+  ],
+  "dependencies": {
+    "base64-js": "^1.1.2",
+    "event-target-shim": "^1.0.5",
+    "prop-types": "^15.5.10",
+    "uuid": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "doc-as-json": "jsdoc -X ./index.js"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "jsdoc-cli": "^1.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/react-native-webrtc/react-native-webrtc/issues"
+  }
+}

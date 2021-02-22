@@ -1,0 +1,1 @@
+exports.Voximplant = require('./src/Voximplant');
