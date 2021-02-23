@@ -8,7 +8,6 @@ import MediaStream from './MediaStream';
 import MediaStreamTrack from './MediaStreamTrack';
 import mediaDevices from './MediaDevices';
 import permissions from './Permissions';
-import Voximplant from './vp';
 
 export {
   RTCPeerConnection,
@@ -19,8 +18,7 @@ export {
   MediaStreamTrack,
   mediaDevices,
   permissions,
-  registerGlobals,
-  Voximplant
+  registerGlobals
 };
 
 function registerGlobals() {

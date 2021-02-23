@@ -12,13 +12,13 @@
 #import <React/RCTLog.h>
 #import <React/RCTUtils.h>
 
-#import <WebRTC/RTCConfiguration.h>
-#import <WebRTC/RTCIceCandidate.h>
-#import <WebRTC/RTCIceServer.h>
-#import <WebRTC/RTCMediaConstraints.h>
-#import <WebRTC/RTCIceCandidate.h>
-#import <WebRTC/RTCLegacyStatsReport.h>
-#import <WebRTC/RTCSessionDescription.h>
+#import <DWebRTC/RTCConfiguration.h>
+#import <DWebRTC/RTCIceCandidate.h>
+#import <DWebRTC/RTCIceServer.h>
+#import <DWebRTC/RTCMediaConstraints.h>
+#import <DWebRTC/RTCIceCandidate.h>
+#import <DWebRTC/RTCLegacyStatsReport.h>
+#import <DWebRTC/RTCSessionDescription.h>
 
 #import "WebRTCModule.h"
 #import "WebRTCModule+RTCDataChannel.h"

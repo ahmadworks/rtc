@@ -9,10 +9,10 @@
 #import <objc/runtime.h>
 
 #import <React/RCTLog.h>
-#import <WebRTC/RTCEAGLVideoView.h>
-#import <WebRTC/RTCMediaStream.h>
-#import <WebRTC/RTCMTLVideoView.h>
-#import <WebRTC/RTCVideoTrack.h>
+#import <DWebRTC/RTCEAGLVideoView.h>
+#import <DWebRTC/RTCMediaStream.h>
+#import <DWebRTC/RTCMTLVideoView.h>
+#import <DWebRTC/RTCVideoTrack.h>
 
 #import "RTCVideoViewManager.h"
 #import "WebRTCModule.h"

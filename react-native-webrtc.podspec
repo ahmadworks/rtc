@@ -13,11 +13,12 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
 
   s.platform            = :ios, '11.0'
-  s.source_files        = 'ios/*'
+
+  s.preserve_paths      = 'ios/**/*'
+  s.source_files        = 'ios/**/*.{h,m}'
   s.libraries           = 'c', 'sqlite3', 'stdc++'
   s.framework           = 'AudioToolbox','AVFoundation', 'CoreAudio', 'CoreGraphics', 'CoreVideo', 'GLKit', 'VideoToolbox'
-  # s.ios.vendored_frameworks = 'ios/WebRTC.framework'
-  # s.xcconfig            = { 'OTHER_LDFLAGS' => '-framework WebRTC' }
-  s.dependency   'VoxImplantSDK', '2.36.0'
+  s.ios.vendored_frameworks = 'ios/DWebRTC.framework'
+  # s.xcconfig            = { 'OTHER_LDFLAGS' => '-framework DWebRTC' }
   s.dependency          'React'
 end

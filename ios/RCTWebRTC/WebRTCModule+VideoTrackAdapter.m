@@ -8,8 +8,8 @@
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTLog.h>
 
-#import <WebRTC/RTCVideoRenderer.h>
-#import <WebRTC/RTCVideoTrack.h>
+#import <DWebRTC/RTCVideoRenderer.h>
+#import <DWebRTC/RTCVideoTrack.h>
 
 #import "WebRTCModule.h"
 #import "WebRTCModule+RTCPeerConnection.h"

@@ -11,8 +11,8 @@
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTUtils.h>
 
-#import <WebRTC/RTCDefaultVideoDecoderFactory.h>
-#import <WebRTC/RTCDefaultVideoEncoderFactory.h>
+#import <DWebRTC/RTCDefaultVideoDecoderFactory.h>
+#import <DWebRTC/RTCDefaultVideoEncoderFactory.h>
 
 #import "WebRTCModule.h"
 #import "WebRTCModule+RTCPeerConnection.h"

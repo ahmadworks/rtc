@@ -1,6 +1,6 @@
 {
   "name": "react-native-webrtc",
-  "version": "1.84.1",
+  "version": "1.84.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/react-native-webrtc/react-native-webrtc.git"
@@ -21,15 +21,8 @@
     "prop-types": "^15.5.10",
     "uuid": "^3.3.2"
   },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "doc-as-json": "jsdoc -X ./vp.js"
-  },
-  "devDependencies": {
-    "jsdoc": "^3.5.5",
-    "jsdoc-cli": "^1.0.1"
+  "peerDependencies": {
+    "react-native": ">=0.40.0"
   },
   "bugs": {
     "url": "https://github.com/react-native-webrtc/react-native-webrtc/issues"

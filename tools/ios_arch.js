@@ -3,7 +3,7 @@
 const fs = require('fs');
 const exec = require('child_process').execSync;
 
-const WEBRTC_BIN_PATH = '../ios/WebRTC.framework';
+const WEBRTC_BIN_PATH = '../ios/DWebRTC.framework';
 const ARCH_TYPES = ['i386', 'x86_64', 'armv7', 'arm64'];
 
 /* === Example to strip simulator archs for Apple Store Submission ===

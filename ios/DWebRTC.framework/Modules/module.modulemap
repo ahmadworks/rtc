@@ -1,0 +1,6 @@
+framework module DWebRTC {
+  umbrella header "WebRTC.h"
+
+  export *
+  module * { export * }
+}
