@@ -100,8 +100,7 @@ def setup(target_dir, platform):
         mkdirp(webrtc_dir)
         os.chdir(webrtc_dir)
         print('Fetching WebRTC for %s...' % platform)
-        sh('fetch --nohooks drop
-droprtc_%s' % platform, env)
+        sh('fetch --nohooks droprtc_%s' % platform, env)
 
     # Run gclient
     sh('gclient sync', env)
