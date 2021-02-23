@@ -15,7 +15,7 @@
 		35A2226C1CB493C00015FD5C /* WebRTCModule+RTCMediaStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A2223D1CB493C00015FD5C /* WebRTCModule+RTCMediaStream.m */; };
 		35A2226D1CB493C00015FD5C /* WebRTCModule+RTCPeerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A2223F1CB493C00015FD5C /* WebRTCModule+RTCPeerConnection.m */; };
 		35A222701CB493C00015FD5C /* WebRTCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A222451CB493C00015FD5C /* WebRTCModule.m */; };
-		35EC07E61CB73DFE00F3D79C /* RCTConvert+WebRTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EC07E51CB73DFE00F3D79C /* RCTConvert+WebRTC.m */; };
+		35EC07E61CB73DFE00F3D79C /* RCTConvert+DropRTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EC07E51CB73DFE00F3D79C /* RCTConvert+DropRTC.m */; };
 		35EC083A1CB9AEE900F3D79C /* WebRTCModule+RTCDataChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EC08391CB9AEE900F3D79C /* WebRTCModule+RTCDataChannel.m */; };
 		DECBD39D256D3A2D00B987E5 /* DropRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECBD39C256D3A2D00B987E5 /* DropRTC.xcframework */; platformFilter = ios; };
 /* End PBXBuildFile section */
@@ -48,8 +48,8 @@
 		35A2223F1CB493C00015FD5C /* WebRTCModule+RTCPeerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebRTCModule+RTCPeerConnection.m"; sourceTree = "<group>"; };
 		35A222441CB493C00015FD5C /* WebRTCModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRTCModule.h; sourceTree = "<group>"; };
 		35A222451CB493C00015FD5C /* WebRTCModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRTCModule.m; sourceTree = "<group>"; };
-		35EC07E41CB73DBA00F3D79C /* RCTConvert+WebRTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+WebRTC.h"; sourceTree = "<group>"; };
-		35EC07E51CB73DFE00F3D79C /* RCTConvert+WebRTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+WebRTC.m"; sourceTree = "<group>"; };
+		35EC07E41CB73DBA00F3D79C /* RCTConvert+DropRTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+DropRTC.h"; sourceTree = "<group>"; };
+		35EC07E51CB73DFE00F3D79C /* RCTConvert+DropRTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+DropRTC.m"; sourceTree = "<group>"; };
 		35EC08381CB9AEC400F3D79C /* WebRTCModule+RTCDataChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebRTCModule+RTCDataChannel.h"; sourceTree = "<group>"; };
 		35EC08391CB9AEE900F3D79C /* WebRTCModule+RTCDataChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebRTCModule+RTCDataChannel.m"; sourceTree = "<group>"; };
 		DECBD39C256D3A2D00B987E5 /* DropRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DropRTC.xcframework; path = ../apple/DropRTC.xcframework; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 		35A222311CB493C00015FD5C /* RCTWebRTC */ = {
 			isa = PBXGroup;
 			children = (
-				35EC07E41CB73DBA00F3D79C /* RCTConvert+WebRTC.h */,
-				35EC07E51CB73DFE00F3D79C /* RCTConvert+WebRTC.m */,
+				35EC07E41CB73DBA00F3D79C /* RCTConvert+DropRTC.h */,
+				35EC07E51CB73DFE00F3D79C /* RCTConvert+DropRTC.m */,
 				0BDDA6DE20C17EA400B38B45 /* RTCMediaStreamTrack+React.h */,
 				0BDDA6DC20C17E7C00B38B45 /* RTCMediaStreamTrack+React.m */,
 				35A222361CB493C00015FD5C /* RTCVideoViewManager.h */,
@@ -182,7 +182,7 @@
 				0BDDA6E020C18B6B00B38B45 /* VideoCaptureController.m in Sources */,
 				0BDDA6DD20C17E7C00B38B45 /* RTCMediaStreamTrack+React.m in Sources */,
 				35A222701CB493C00015FD5C /* WebRTCModule.m in Sources */,
-				35EC07E61CB73DFE00F3D79C /* RCTConvert+WebRTC.m in Sources */,
+				35EC07E61CB73DFE00F3D79C /* RCTConvert+DropRTC.m in Sources */,
 				0BC6C06C217F1D54005DCD37 /* WebRTCModule+Permissions.m in Sources */,
 				35EC083A1CB9AEE900F3D79C /* WebRTCModule+RTCDataChannel.m in Sources */,
 				35A222691CB493C00015FD5C /* RTCVideoViewManager.m in Sources */,
