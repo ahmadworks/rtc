@@ -1,5 +1,5 @@
 framework module DropRTC {
-  umbrella header "DropRTC.h"
+  umbrella header "WebRTC.h"
 
   export *
   module * { export * }
