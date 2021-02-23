@@ -47,7 +47,7 @@
 #import <DropRTC/RTCCVPixelBuffer.h>
 #import <DropRTC/RTCCameraPreviewView.h>
 #import <DropRTC/RTCDispatcher.h>
-#import <DropRTCUIDevice+RTCDevice.h>
+#import <DropRTC/UIDevice+RTCDevice.h>
 #import <DropRTC/RTCAudioSource.h>
 #import <DropRTC/RTCAudioTrack.h>
 #import <DropRTC/RTCConfiguration.h>
