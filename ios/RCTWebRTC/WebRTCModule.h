@@ -12,13 +12,13 @@
 #import <React/RCTConvert.h>
 #import <React/RCTEventEmitter.h>
 
-#import <DWebRTC/RTCMediaStream.h>
-#import <DWebRTC/RTCPeerConnectionFactory.h>
-#import <DWebRTC/RTCPeerConnection.h>
-#import <DWebRTC/RTCAudioTrack.h>
-#import <DWebRTC/RTCVideoTrack.h>
-#import <DWebRTC/RTCVideoDecoderFactory.h>
-#import <DWebRTC/RTCVideoEncoderFactory.h>
+#import <DropRTC/RTCMediaStream.h>
+#import <DropRTC/RTCPeerConnectionFactory.h>
+#import <DropRTC/RTCPeerConnection.h>
+#import <DropRTC/RTCAudioTrack.h>
+#import <DropRTC/RTCVideoTrack.h>
+#import <DropRTC/RTCVideoDecoderFactory.h>
+#import <DropRTC/RTCVideoEncoderFactory.h>
 
 static NSString *const kEventPeerConnectionSignalingStateChanged = @"peerConnectionSignalingStateChanged";
 static NSString *const kEventPeerConnectionStateChanged = @"peerConnectionStateChanged";

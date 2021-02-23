@@ -5,14 +5,15 @@
 //  Copyright © 2015 One. All rights reserved.
 //
 
+#if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
+#endif
 
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTUtils.h>
-
-#import <DWebRTC/RTCDefaultVideoDecoderFactory.h>
-#import <DWebRTC/RTCDefaultVideoEncoderFactory.h>
+#import <DropRTC/RTCDefaultVideoDecoderFactory.h>
+#import <DropRTC/RTCDefaultVideoEncoderFactory.h>
 
 #import "WebRTCModule.h"
 #import "WebRTCModule+RTCPeerConnection.h"

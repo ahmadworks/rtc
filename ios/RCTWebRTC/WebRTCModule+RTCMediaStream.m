@@ -7,9 +7,9 @@
 
 #import <objc/runtime.h>
 
-#import <DWebRTC/RTCCameraVideoCapturer.h>
-#import <DWebRTC/RTCVideoTrack.h>
-#import <DWebRTC/RTCMediaConstraints.h>
+#import <DropRTC/RTCCameraVideoCapturer.h>
+#import <DropRTC/RTCVideoTrack.h>
+#import <DropRTC/RTCMediaConstraints.h>
 
 #import "RTCMediaStreamTrack+React.h"
 #import "WebRTCModule+RTCPeerConnection.h"
@@ -123,17 +123,21 @@ RCT_EXPORT_METHOD(enumerateDevices:(RCTResponseSenderBlock)callback)
                                                                  mediaType:AVMediaTypeVideo
                                                                   position:AVCaptureDevicePositionUnspecified];
     for (AVCaptureDevice *device in videoevicesSession.devices) {
-        NSString *position = @"";
+        NSString *position = @"unknown";
         if (device.position == AVCaptureDevicePositionBack) {
             position = @"environment";
         } else if (device.position == AVCaptureDevicePositionFront) {
             position = @"front";
         }
+        NSString *label = @"Unknown video device";
+        if (device.localizedName != nil) {
+            label = device.localizedName;
+        }
         [devices addObject:@{
                              @"facing": position,
                              @"deviceId": device.uniqueID,
                              @"groupId": @"",
-                             @"label": device.localizedName,
+                             @"label": label,
                              @"kind": @"videoinput",
                              }];
     }
@@ -142,10 +146,14 @@ RCT_EXPORT_METHOD(enumerateDevices:(RCTResponseSenderBlock)callback)
                                                                  mediaType:AVMediaTypeAudio
                                                                   position:AVCaptureDevicePositionUnspecified];
     for (AVCaptureDevice *device in audioDevicesSession.devices) {
+        NSString *label = @"Unknown audio device";
+        if (device.localizedName != nil) {
+            label = device.localizedName;
+        }
         [devices addObject:@{
                              @"deviceId": device.uniqueID,
                              @"groupId": @"",
-                             @"label": device.localizedName,
+                             @"label": label,
                              @"kind": @"audioinput",
                              }];
     }
@@ -190,15 +198,6 @@ RCT_EXPORT_METHOD(mediaStreamRelease:(nonnull NSString *)streamID)
 {
   RTCMediaStream *stream = self.localStreams[streamID];
   if (stream) {
-    for (RTCVideoTrack *track in stream.videoTracks) {
-      track.isEnabled = NO;
-      [track.videoCaptureController stopCapture];
-      [self.localTracks removeObjectForKey:track.trackId];
-    }
-    for (RTCAudioTrack *track in stream.audioTracks) {
-      track.isEnabled = NO;
-      [self.localTracks removeObjectForKey:track.trackId];
-    }
     [self.localStreams removeObjectForKey:streamID];
   }
 }

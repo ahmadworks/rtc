@@ -1,6 +1,6 @@
 
 #import <Foundation/Foundation.h>
-#import <DWebRTC/RTCCameraVideoCapturer.h>
+#import <DropRTC/RTCCameraVideoCapturer.h>
 
 @interface VideoCaptureController : NSObject
 

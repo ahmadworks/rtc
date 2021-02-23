@@ -1,0 +1,6 @@
+framework module DropRTC {
+  umbrella header "DropRTC.h"
+
+  export *
+  module * { export * }
+}

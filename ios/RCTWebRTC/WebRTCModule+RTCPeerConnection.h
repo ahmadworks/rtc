@@ -6,8 +6,8 @@
 //
 
 #import "WebRTCModule.h"
-#import <DWebRTC/RTCDataChannel.h>
-#import <DWebRTC/RTCPeerConnection.h>
+#import <DropRTC/RTCDataChannel.h>
+#import <DropRTC/RTCPeerConnection.h>
 
 @interface RTCPeerConnection (React)
 

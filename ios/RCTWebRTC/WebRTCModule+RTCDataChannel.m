@@ -5,7 +5,7 @@
 
 #import "WebRTCModule+RTCDataChannel.h"
 #import "WebRTCModule+RTCPeerConnection.h"
-#import <DWebRTC/RTCDataChannelConfiguration.h>
+#import <DropRTC/RTCDataChannelConfiguration.h>
 
 @implementation RTCDataChannel (React)
 

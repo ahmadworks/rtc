@@ -1,8 +1,8 @@
 #import "RCTConvert+WebRTC.h"
 #import <React/RCTLog.h>
-#import <DWebRTC/RTCDataChannelConfiguration.h>
-#import <DWebRTC/RTCIceServer.h>
-#import <DWebRTC/RTCSessionDescription.h>
+#import <DropRTC/RTCDataChannelConfiguration.h>
+#import <DropRTC/RTCIceServer.h>
+#import <DropRTC/RTCSessionDescription.h>
 
 @implementation RCTConvert (WebRTC)
 
