@@ -4,7 +4,7 @@
 #import <DropRTC/RTCIceServer.h>
 #import <DropRTC/RTCSessionDescription.h>
 
-@implementation RCTConvert (WebRTC)
+@implementation RCTConvert (DropRTC)
 
 + (RTCSessionDescription *)RTCSessionDescription:(id)json
 {

@@ -95,19 +95,20 @@ def setup(target_dir, platform):
     env['PATH'] = '%s:%s' % (env['PATH'], depot_tools_dir)
 
     # Maybe fetch WebRTC
-    webrtc_dir = os.path.join(target_dir, 'webrtc', platform)
+    webrtc_dir = os.path.join(target_dir, 'droprtc', platform)
     if not os.path.isdir(webrtc_dir):
         mkdirp(webrtc_dir)
         os.chdir(webrtc_dir)
         print('Fetching WebRTC for %s...' % platform)
-        sh('fetch --nohooks webrtc_%s' % platform, env)
+        sh('fetch --nohooks drop
+droprtc_%s' % platform, env)
 
     # Run gclient
     sh('gclient sync', env)
 
     # Install dependencies
     if platform == 'android':
-        webrtc_dir = os.path.join(target_dir, 'webrtc', platform, 'src')
+        webrtc_dir = os.path.join(target_dir, 'droprtc', platform, 'src')
         os.chdir(webrtc_dir)
         sh('./build/install-build-deps.sh')
 
@@ -115,7 +116,7 @@ def setup(target_dir, platform):
 def sync(target_dir, platform):
     build_dir = os.path.join(target_dir, 'build', platform)
     depot_tools_dir = os.path.join(target_dir, 'depot_tools')
-    webrtc_dir = os.path.join(target_dir, 'webrtc', platform, 'src')
+    webrtc_dir = os.path.join(target_dir, 'droprtc', platform, 'src')
 
     if not os.path.isdir(webrtc_dir):
         print('WebRTC source not found, did you forget to run --setup?')
@@ -141,7 +142,7 @@ def build(target_dir, platform, debug):
     build_dir = os.path.join(target_dir, 'build', platform)
     build_type = 'Debug' if debug else 'Release'
     depot_tools_dir = os.path.join(target_dir, 'depot_tools')
-    webrtc_dir = os.path.join(target_dir, 'webrtc', platform, 'src')
+    webrtc_dir = os.path.join(target_dir, 'droprtc', platform, 'src')
 
     if not os.path.isdir(webrtc_dir):
         print('WebRTC source not found, did you forget to run --setup?')
